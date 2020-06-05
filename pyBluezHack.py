@@ -9,9 +9,9 @@ from bluetooth.ble import BeaconService #3rd party module
 service = BeaconService()
 
 service.start_advertising("11111111-2222-3333-4444-555555555555", 1, 1, 1, 200 )
-
+#sleep after 15 seconds
 time.sleep(15)
-
+#stop the service
 service.stop_advertising()
-
+#printing Done
 print("Done.")
